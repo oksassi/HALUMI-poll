@@ -7,7 +7,7 @@ $title Export existing results from GDX file
 
 $if not set SIM $set SIM MAX
 $if not set padded $set padded 0777
-$if not set filepath $set filepath C:\git\BEATLE\PALUD\PALUD_aggregated
+$if not set filepath $set filepath C:\git\HALUMI_poll\PALUD
 $if not set folder $set folder EE-v2
 $if not set outdir $set outdir Output\%folder%\%SIM%_%padded%
 

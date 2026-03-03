@@ -8,3 +8,6 @@ HOW TO RUN THE MODEL
 6) To create output xlsx files, you can run run_output_processing.R, which starts the gms file Output_processing.gms.
 
 NOTE: Do not push the contents of folder "t" (BW.g00 and BW_opt.g00) to git. The files are far too big for git and should only be stored on your local machine. 
+
+INPUT DATA
+Input data is (partly) confidential and available upon request (saskia.osterkamp@uni-hohenheim.de)

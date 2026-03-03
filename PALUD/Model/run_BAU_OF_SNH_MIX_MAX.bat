@@ -17,7 +17,7 @@ set folder=EE-v2
 echo Running Model_optimisation.gms 
 gams Model_optimisation.gms r=./t/BW s= ./t/BW_opt --org_increase_upper=0.73 --org_increase_lower=0.73
 
-set "gdxVal=C:\git\BEATLE\PALUD\PALUD_aggregated\Output\!folder!\BAU.gdx"
+set "gdxVal=C:\git\HALUMI_poll\PALUD\Output\!folder!\BAU.gdx"
 set "outdirVal=Output\!folder!"
 echo Running SIM.gms
 gams SIM.gms --outdir=!outdirVal! r=./t/BW_opt --SIM="BAU" GDX=!gdxVal!
@@ -29,7 +29,7 @@ echo Output directory !outdirVal!
 echo Running Model_optimisation.gms 
 gams Model_optimisation.gms r=./t/BW s= ./t/BW_opt --org_increase_upper=2.74 --org_increase_lower=2.74
 
-set "gdxVal=C:\git\BEATLE\PALUD\PALUD_aggregated\Output\!folder!\OF.gdx"
+set "gdxVal=C:\git\HALUMI_poll\PALUD\Output\!folder!\OF.gdx"
 set "outdirVal=Output\!folder!"
 echo Running SIM.gms
 gams SIM.gms --outdir=!outdirVal! r=./t/BW_opt --SIM="OF" GDX=!gdxVal!
@@ -45,7 +45,7 @@ set sim=SNH
 REM Construct folder name
 set "rVal=.\t\BW_opt_snh_!padded!"
 
-set "gdxVal=C:\git\BEATLE\PALUD\PALUD_aggregated\Output\!folder!\!sim!_!padded!.gdx"
+set "gdxVal=C:\git\HALUMI_poll\PALUD\Output\!folder!\!sim!_!padded!.gdx"
 set "outdirVal=Output\!folder!\!sim!_!padded!"
 echo Output directory should be !outdirVal!
 echo Running Model_optimisation.gms 
@@ -67,7 +67,7 @@ REM Construct folder name
 set "rVal=.\t\BW_opt_!sim!_!padded!"
 set "sVal=.\t\BW_res_!sim!_!padded!"
 
-set "gdxVal=C:\git\BEATLE\PALUD\PALUD_aggregated\Output\!folder!\!sim!_!padded!.gdx"
+set "gdxVal=C:\git\HALUMI_poll\PALUD\Output\!folder!\!sim!_!padded!.gdx"
 set "outdirVal=Output\!folder!\!sim!_!padded!"
 echo Output directory should be !outdirVal!
 echo Running Model_optimisation.gms 
@@ -87,7 +87,7 @@ set sim=MAX
 REM Construct folder name
 set "rVal=.\t\BW_opt_snh_!padded!"
 
-set "gdxVal=C:\git\BEATLE\PALUD\PALUD_aggregated\Output\!folder!\!sim!_!padded!.gdx"
+set "gdxVal=C:\git\HALUMI_poll\PALUD\Output\!folder!\!sim!_!padded!.gdx"
 set "outdirVal=Output\!folder!"
 echo Output directory should be !outdirVal!
 echo Running Model_optimisation.gms 
